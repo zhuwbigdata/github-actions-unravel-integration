@@ -19,18 +19,8 @@ Unravel API and Azure DevOps API using access tokens
 
 Need to add a pipeline YAML file and a CI/CD Python script.
 
-ci.yml
-
+.github/workflows/ci.yml
 cicd-scripts/githubactionclient.py 
-
-
-
-
-
-
-
-
-
 
 
 # Comments
