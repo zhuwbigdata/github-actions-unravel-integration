@@ -27,7 +27,6 @@ cicd-scripts/githubactionclient.py
 
 
 
-## Github Action on pull_request
 
 
 
