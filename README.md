@@ -16,22 +16,18 @@ Going through the example, you will:
 ## APIs
 Unravel API and Azure DevOps API using access tokens
 
-## Additon to Azure DevOps Repository 
 
 Need to add a pipeline YAML file and a CI/CD Python script.
 
-azure-pipelines.yml
+ci.yml
 
 cicd-scripts/githubactionclient.py 
 
 
 
 
-## Github Action in Azure DevOps git
 
-Need to create a repository branch policy to trigger a build on Pull Request.
 
-https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser#build-validation -u "${{ vars.unravel_url' }}" -t "${{ screts.unravel_token }} -i 
 
 
 
