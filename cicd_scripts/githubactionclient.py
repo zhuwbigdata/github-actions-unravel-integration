@@ -314,7 +314,7 @@ def main():
     elif opt in ('-u', '--unravel'):
         unravel_url = arg
     elif opt in ('-t', '--token'):
-        unravel_token = arg
+        unravel_token = "JWT " + arg
     elif opt in ('-i', '--id'):
         pr_id = arg
 
@@ -324,7 +324,7 @@ def main():
   print('-t : ' + unravel_token)
   print('-i : ' + pr_id)
 
-
+  #unravel_token = "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJhcHBJZCI6ImNpY2QiLCJpZCI6IiIsInVzZXJuYW1lIjoiIiwidGFncyI6e30sImF1ZCI6IjNwIiwiaWF0IjoxNjgzNTY4NzE1fQ.Mthh9x832yQyJXOpQX6Ulj2b0CgUDLfWFoAjCAY67Jw"
   with open('pr_body.txt', 'r') as file:
     raw_description = file.read()
 
