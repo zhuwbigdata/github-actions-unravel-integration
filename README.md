@@ -22,7 +22,7 @@ Need to add a pipeline YAML file and a CI/CD Python script.
 
 azure-pipelines.yml
 
-cicd-scripts/azdevopsclient.py 
+cicd-scripts/githubactionclient.py 
 
 
 
