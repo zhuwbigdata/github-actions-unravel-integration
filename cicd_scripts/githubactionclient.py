@@ -296,10 +296,7 @@ def fetch_app_summary(unravel_url, unravel_token, clusterUId, appId):
 def main():
   unravel_url = ''
   unravel_token = ''
-  organization_url = ''
-  pat = ''
-  project_name = ''
-  build_id = ''
+  pr_id = ''
   
   try:
     opts, args = getopt.getopt(sys.argv[1:], 'hu:t:i:',
