@@ -31,7 +31,7 @@ cicd-scripts/azdevopsclient.py
 
 Need to create a repository branch policy to trigger a build on Pull Request.
 
-https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser#build-validation
+https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser#build-validation -u "${{ vars.unravel_url' }}" -t "${{ screts.unravel_token }} -i 
 
 
 
