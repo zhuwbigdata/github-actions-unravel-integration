@@ -39,6 +39,10 @@ jobs:
       - name: Run a one-line script
         run: echo "${{ github.event.pull_request.body }}" > pr_body.txt
 
+      # Runs a single command using the runners shell
+      - name: Check Secrets
+        run: echo "${{ secrets.unravel_url }}" "${{ secrets.unravel_token }}" 
+      
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: python cicd_scripts/githubactionclient.py -u "${{ vars.unravel_url }}" -t "${{ secrets.unravel_token }}" -i "{{ github.event.pull_request.body}}"
+        run: python cicd_scripts/githubactionclient.py -u "${{ secrets.unravel_url }}" -t "${{ secrets.unravel_token }}" -i "{{ github.event.pull_request.body}}"
