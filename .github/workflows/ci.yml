@@ -26,14 +26,14 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.8' 
-          cache: 'pip'
 
       # Runs a single command using the runners shell
       - name: Check Python version
         run: python3.8 --version
 
       - name: PIP
-        run: pip3.8 install -r pythonreq.txt
+        run:  | 
+            python3.8 -m pip install  requests
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
