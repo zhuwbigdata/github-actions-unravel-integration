@@ -55,3 +55,13 @@ jobs:
             UNRAVEL_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJhcHBJZCI6ImNpY2QiLCJpZCI6IiIsInVzZXJuYW1lIjoiIiwidGFncyI6e30sImF1ZCI6IjNwIiwiaWF0IjoxNjgzNTY4NzE1fQ.Mthh9x832yQyJXOpQX6Ulj2b0CgUDLfWFoAjCAY67Jw"
             PR_ID: ${{ github.event.pull_request.number }}
         run: python cicd_scripts/githubactionclient.py -u $UNRAVEL_URL -t $UNRAVEL_TOKEN -i $PR_ID
+
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 Thanks for reporting!'
+            })
