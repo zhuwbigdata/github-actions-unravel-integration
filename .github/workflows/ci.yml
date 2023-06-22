@@ -31,7 +31,7 @@ jobs:
       - name: Check Python version
         run: python3.8 --version
 
-      - name: PIP
+      - name: PIP install requests
         run:  | 
             python3.8 -m pip install  requests
 
