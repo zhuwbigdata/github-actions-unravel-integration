@@ -44,14 +44,14 @@ jobs:
 
       - name: Call ENVs
         env:
-            UNRAVEL_URL: ${{ secrets.unravel_url }}
-            UNRAVEL_TOKEN: ${{ secrets.unravel_token }}
+            UNRAVEL_URL: ${{ secrets.UNRAVL_URL }}
+            UNRAVEL_TOKEN: ${{ secrets.UNRAVEL_TOKEN }}
             PR_ID: ${{ github.event.pull_request.number }}
         run: echo $UNRAVEL_URL  $UNRAVEL_TOKEN  $PR_ID
 
       - name: Call Unravel API
         env:
-            UNRAVEL_URL: ${{ secrets.unravel_url }}
-            UNRAVEL_TOKEN: ${{ secrets.unravel_token }}
+            UNRAVEL_URL: ${{ secrets.UNRAVL_URL }}
+            UNRAVEL_TOKEN: ${{ secrets.UNRAVEL_TOKEN }}
             PR_ID: ${{ github.event.pull_request.number }}
         run: python cicd_scripts/githubactionclient.py -u $UNRAVEL_URL -t $UNRAVEL_TOKEN -i $PR_ID
