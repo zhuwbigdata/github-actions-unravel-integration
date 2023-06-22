@@ -40,13 +40,4 @@ https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=az
 # Comments
 The example is hands-on. 
 
-We recommend working it step-by-step to learn how to apply these techniques to your own Databricks notebooks.
-
-Will update the comments with Unravel.
-
-Re-trigger.
-
-Updated for Demo.
-
-Demo for Unity APP team.
 
