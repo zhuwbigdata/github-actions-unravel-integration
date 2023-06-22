@@ -3,9 +3,9 @@ import sys
 from datetime import timedelta, datetime
 import json
 import re
-import requests
 import getopt
 import urllib3
+import requests
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # %%
