@@ -16,7 +16,6 @@ Going through the example, you will:
 ## APIs
 Unravel API and Azure DevOps API using access tokens
 
-## Additon to Azure DevOps Repository 
 
 Need to add a pipeline YAML file and a CI/CD Python script.
 
